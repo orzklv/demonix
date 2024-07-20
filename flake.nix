@@ -11,7 +11,7 @@
     nixpkgs-old-nodejs.url = "github:nixos/nixpkgs/62fab0d98ae9f62c41832ec2986bb7d8622786a0";
 
     # Home manager
-    home-manager.url = "github:nix-community/home-manager/release-23.11";
+    home-manager.url = "github:nix-community/home-manager/release-24.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
