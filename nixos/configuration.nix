@@ -13,7 +13,7 @@
     # outputs.nixosModules.example
     outputs.nixosModules.ssh
     outputs.nixosModules.users.sakhib
-    outputs.nixosModules.users.shakhzod
+    # outputs.nixosModules.users.shakhzod
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd
