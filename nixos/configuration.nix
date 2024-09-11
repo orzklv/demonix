@@ -12,6 +12,8 @@
     # If you want to use modules your own flake exports (from modules/nixos):
     # outputs.nixosModules.example
     outputs.nixosModules.ssh
+    outputs.nixosModules.users.sakhib
+    outputs.nixosModules.users.shakhzod
 
     # Or modules from other flakes (such as nixos-hardware):
     # inputs.hardware.nixosModules.common-cpu-amd
@@ -111,27 +113,6 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.sakhib = {
-    isNormalUser = true;
-    description = "Sokhibjon Orzikulov";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      #  thunderbird
-      telegram-desktop
-    ];
-  };
-
-  users.users.shakhzod = {
-    isNormalUser = true;
-    description = "Shakhzod";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      # thunderbird
-      firefox
-    ];
-  };
 
   # Allow unfree packages
   # nixpkgs.config.allowUnfree = true;
